@@ -1,0 +1,37 @@
+baseurl = "//bengadbois.com"
+languageCode = "en"
+title = "Ben Gadbois"
+theme = "hucore"
+copyright = "Made with ¯\\_(ツ)_\/¯"
+googleAnalytics = "UA-104417810-1"
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+
+[params]
+Description = "Ben Gadbois website"
+Keywords = ["blog", "developer", "code"]
+author = "Ben Gadbois"
+sharingicons = false
+displayauthor = false
+
+[params.highlight]
+style = "github"
+languages = ["go", "bash"]
+
+[[params.social]]
+url = "https://github.com/bengadbois"
+fa_icon = "fa-github"
+
+[[params.social]]
+url = "https://linkedin.com/in/bengadbois"
+fa_icon = "fa-linkedin-square"
+
+[[params.social]]
+url = "/index.xml"
+fa_icon = "fa-rss"
+
+[[params.socialshare]]
+url = "https://linkedin.com/in/mgjohansen"
+fa_icon = "fa-linkedin-square"
