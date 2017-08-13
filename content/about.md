@@ -4,7 +4,7 @@ date = "2017-08-10"
 menu = "main"
 +++
 
-Personal Website
+Personal Website<!--more-->
 
 Reach me at hello@bengadbois.com
 
