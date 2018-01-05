@@ -1,4 +1,4 @@
-baseurl = "//bengadbois.com"
+baseurl = "//blog.bengadbois.com"
 languageCode = "en"
 title = "Ben Gadbois"
 theme = "hucore"
@@ -10,7 +10,7 @@ tag = "tags"
 category = "categories"
 
 [params]
-Description = "Ben Gadbois website"
+Description = "Ben Gadbois blog"
 Keywords = ["blog", "developer", "code"]
 author = "Ben Gadbois"
 sharingicons = false
