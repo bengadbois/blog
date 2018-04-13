@@ -12,7 +12,7 @@ There's lots of resources on tmux configuration and commands. Here are some of t
 
 Note: the examples assume the default tmux config at `~/.tmux.conf`.
 
-### New windows and panes start in the same path
+## New windows and panes start in the same path
 
 If you are in `$HOME` and run `tmux`, every new window and pane will start in `$HOME`. However, if you `cd /long/path/to/working/area/` and open a new tmux window or pane, you may prefer to start off in `/long/path/to/working/area/`.
 
@@ -24,7 +24,7 @@ bind % split-window -h -c "#{pane_current_path}"
 bind c new-window -c "#{pane_current_path}"
 ```
 
-### Live reload the tmux config
+## Live reload the tmux config
 
 If you are experimenting with changes in your tmux config file, you may prefer to not restart your tmux instance every time you make a change.
 
@@ -39,7 +39,7 @@ Then you can `<tmux prefix> r` and the config will be reloaded. If there's an er
 
 Alternately, if you prefer to just type a shell command, you can run (inside your tmux session) `tmux source-file ~/.tmux.conf`.
 
-### Increase tmux scrollback history
+## Increase tmux scrollback history
 
 The number of lines saved in your tmux pane defaults to 2000. Sometimes that's not enough.
 
@@ -51,7 +51,7 @@ set-option -g history-limit 10000
 
 Only set it as large as you think you'll actually need, as tmux's RAM usage will be increased per window, even if not utilized (lines are pre-allocated).
 
-### Put the tmux host's ip address in the statusline
+## Put the tmux host's ip address in the statusline
 
 If you already customize your status line, be aware you can include the output of arbitrary shell commands.
 
@@ -63,7 +63,7 @@ set-option -g status-right '#(curl icanhazip.com)'
 
 Note: there are non-empty default values for `status-left` and `status-right` that the above configuration would overwrite.
 
-### Renaming sessions and windows
+## Renaming sessions and windows
 
 If you use multiple sessions and windows, they eventually become more difficult to keep track of.
 
@@ -75,7 +75,7 @@ If you're at shell inside tmux already, you could instead run the command `tmux 
 
 Similarly to window renaming, the default session rename shortcut is `<tmux prefix> $`. Inside a shell that is `tmux rename-session <new name>`.
 
-### Synchronize panes
+## Synchronize panes
 
 If you have split into two or more panes, you can have your put key commands go to both panes.
 
@@ -87,7 +87,7 @@ To enable via the statusbar run `<tmux prefix> :synchronize-panes on` or within 
 
 Newly created panes while synchronize-panes is enabled are also active.
 
-### Zooming in on a single pane
+## Zooming in on a single pane
 
 Every time you split into a new pane, screen real estate is divided. If you need more space (e.g. long lines are wrapping), you can get a full screen view of a single pane without closing the others. This requires tmux 1.8 or higher.
 
